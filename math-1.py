@@ -3,8 +3,7 @@
 m = input('Please input the first number: ')
 n = input('Please input the second number: ')
 
-mn = m
-nn = n
+mn = m * n
 
 while True:
   i = n % m
@@ -13,5 +12,5 @@ while True:
   n = m
   m = i
   
-print '%i is GCD.'%m
-print '%i is LCM.'%(mn * nn / m)
+print '%i is GCD (greatest common divisor).' % m
+print '%i is LCM (least common multiple).' % (mn / m)
